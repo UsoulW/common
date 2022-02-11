@@ -1,4 +1,4 @@
-package cn.usoul.common;
+package cn.syag.common;
 
 /**
  * 字符串检测

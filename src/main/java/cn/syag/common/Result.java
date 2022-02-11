@@ -1,4 +1,4 @@
-package cn.usoul.common;
+package cn.syag.common;
 
 public class Result{
     private short code;
@@ -23,11 +23,11 @@ public class Result{
         return result;
     }
 
-    public boolean isOk(){
+    public boolean ifOk(){
         return code==0;
     }
 
-    public boolean isFail(){
+    public boolean ifFail(){
         return code!=0;
     }
 

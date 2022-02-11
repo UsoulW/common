@@ -1,10 +1,10 @@
-package cn.usoul.common;
+package cn.syag.common;
 public class TResult<T>{
     private short code;
     private T data;
 
     public static <T> TResult ofNullable(T data){
-        if (null == null){
+        if (null == data){
             return fail(1);
         }
         TResult result=new TResult();
@@ -27,11 +27,11 @@ public class TResult<T>{
         return result;
     }
 
-    public boolean isOk(){
+    public boolean ifOk(){
         return code==0;
     }
 
-    public boolean isFail(){
+    public boolean ifFail(){
         return code!=0;
     }
 
